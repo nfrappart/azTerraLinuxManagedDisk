@@ -1,6 +1,10 @@
 # Managed Disk for Data disk Module
 This module allows you to create a Managed disk to be attached to an existing VM
 
+# Required Resources
+- existing resource group
+- existing linux virtual machine
+
 ## Usage Example :
 
 ```hcl
