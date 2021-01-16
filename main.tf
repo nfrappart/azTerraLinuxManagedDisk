@@ -1,6 +1,6 @@
 #
 resource "azurerm_managed_disk" "Terra-DataDisk" {
-  name                 = "${var.VmPrefix}azuvsrv${format("%04d", var.CovageServerId)}l-DataDisk-${var.DiskSuffix}"
+  name                 = "${var.VmEnv}lin${format("%04d", var.VmNumber)}-DataDisk-${var.DiskSuffix}"
   location             = var.RgLocation
   resource_group_name  = var.RgName
   storage_account_type = var.StorageAccountType

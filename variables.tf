@@ -5,7 +5,7 @@ variable "VmName" {
 */
 
 #serial of the server like 10, 85, 120, 55 for Covage naming convention
-variable "CovageServerId" {
+variable "VmNumber" {
   type = string
 }
 
