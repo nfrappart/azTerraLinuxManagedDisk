@@ -1,4 +1,4 @@
-#
+# REVIEW NEEDED !!!! ###
 resource "azurerm_managed_disk" "Terra-DataDisk" {
   name                 = "${var.VmEnv}lin${format("%04d", var.VmNumber)}-DataDisk-${var.DiskSuffix}"
   location             = var.RgLocation
