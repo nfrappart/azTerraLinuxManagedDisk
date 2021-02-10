@@ -11,7 +11,7 @@ resource "azurerm_managed_disk" "Terra-DataDisk" {
     Environment       = var.EnvironmentTag
     Usage             = var.EnvironmentUsageTag
     Owner             = var.OwnerTag
-    ProvisioningDate  = var.ProvisioningDateTag
+    ProvisioningDate  = timestamp()
     ProvisioningMode  = var.ProvisioningModeTag
   }
   lifecycle {

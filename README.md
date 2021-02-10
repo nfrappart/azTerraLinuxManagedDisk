@@ -20,9 +20,8 @@ module "testDataDisk" {
   DiskSuffix            = "Images" #Suffix to identify disk usage with name
   LunId                 = "1" #/!\ be very careful with lun id, check existing vm attached disks lun id before setting this value
   EnvironmentTag        = var.TAG-Env
-  EnvironmentUsageTag   = var.TAG-Use
+  #UsageTag = "Demo" #Optional. Default value is "PoC Usage Only"
   OwnerTag              = "Me" #default is "Nate"
-  ProvisioningDateTag   = timestamp()
   ProvisioningModeTag   = "Terraform" #default value is "Terraform"
 }
 ```
