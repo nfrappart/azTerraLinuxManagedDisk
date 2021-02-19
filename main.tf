@@ -9,7 +9,7 @@ resource "azurerm_managed_disk" "Terra-DataDisk" {
 
   tags = {
     Environment       = var.EnvironmentTag
-    Usage             = var.EnvironmentUsageTag
+    Usage             = var.UsageTag
     Owner             = var.OwnerTag
     ProvisioningDate  = timestamp()
     ProvisioningMode  = var.ProvisioningModeTag
