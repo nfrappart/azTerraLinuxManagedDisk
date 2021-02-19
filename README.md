@@ -19,6 +19,7 @@ module "testDataDisk" {
   DiskSize              = "128" #default is "32"
   DiskSuffix            = "Images" #Suffix to identify disk usage with name
   LunId                 = "1" #/!\ be very careful with lun id, check existing vm attached disks lun id before setting this value
+  AvZones               = ["1"] #Default is zone 1
   EnvironmentTag        = var.TAG-Env
   #UsageTag = "Demo" #Optional. Default value is "PoC Usage Only"
   OwnerTag              = "Me" #default is "Nate"
