@@ -6,6 +6,7 @@ resource "azurerm_managed_disk" "Terra-DataDisk" {
   storage_account_type = var.StorageAccountType
   create_option        = var.CreateOption
   disk_size_gb         = var.DiskSize
+  zones                = var.AvZones
 
   tags = {
     Environment       = var.EnvironmentTag
