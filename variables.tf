@@ -45,6 +45,11 @@ variable "DiskSize" {
   type = string
   default = "32"
 }
+variable "AvZones" {
+  type = list
+  default = ["1"]
+}
+
 variable "EnvironmentTag" {
   type = string
   default = "Sbx"
