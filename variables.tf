@@ -20,7 +20,7 @@ variable "LunId" {
 }
 
 #The target environement for the application
-variable "VmPrefix" {
+variable "VmEnv" {
   type = string
 }
 variable "DiskSuffix" {
